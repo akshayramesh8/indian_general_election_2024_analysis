@@ -248,7 +248,7 @@ SET
     party_alliance = 'I.N.D.I.A'
 WHERE
     party IN (
-            'Indian National Congress - INC',
+                'Indian National Congress - INC',
                 'Aam Aadmi Party - AAAP',
                 'All India Trinamool Congress - AITC',
                 'Bharat Adivasi Party - BHRTADVSIP',
