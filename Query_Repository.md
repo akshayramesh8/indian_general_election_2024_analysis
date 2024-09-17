@@ -10,7 +10,7 @@ FROM
     constituencywise_results
 ```
 **Output:**
-![Total Seats](indian_general_election_2024_analysis\images\Total_Seats.png)
+![Total Seats](Total_Seats.png)
 
 
 ## **Query 2**: Statewise seats in total
