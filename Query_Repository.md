@@ -33,7 +33,7 @@ ORDER BY
 ```
 
 **Output:**
-![Statewise Seats](Total_Seats_State.png)
+![Statewise Seats](Statewise_Seats.png)
 
 ## **Query 3**: Total seats won by NDA
 
