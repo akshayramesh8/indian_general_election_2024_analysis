@@ -33,7 +33,7 @@ ORDER BY
 ```
 
 **Sample Output:**
-![Statewise Seats](indian_general_election_2024_analysis\images\Statewise_Seats.png)
+![Statewise Seats](Total_Seats_State.png)
 
 ## **Query 3**: Total seats won by NDA
 
