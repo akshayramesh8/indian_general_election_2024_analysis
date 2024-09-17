@@ -367,7 +367,7 @@ ORDER BY
 ```
 
 **Sample Output:**
-![EVM vs Postal Votes](indian_general_election_2024_analysis\images\EVM_vs_Postal_Votes.png)
+![EVM vs Postal Votes](https://github.com/akshayramesh8/indian_general_election_2024_analysis/blob/a0c57ea595978bb3d23971c25ccd6af5025b30d0/EVM_vs_Postal_Votes.png)
 
 ## **Query 10:** Parties that won the most seats in a state
 
