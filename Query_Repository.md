@@ -367,7 +367,7 @@ ORDER BY
 ```
 
 **Sample Output:**
-![EVM vs Postal Votes](EVM_vs_Postal_Votes.png)
+![EVM vs Postal Votes](Assets/EVM_vs_Postal_Votes.png)
 
 ## **Query 10:** Parties that won the most seats in a state
 
