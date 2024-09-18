@@ -10,7 +10,7 @@ FROM
     constituencywise_results
 ```
 **Output:**
-![Total Seats](Total_Seats.png)
+![Total Seats](Assets/Total_Seats.png)
 
 
 ## **Query 2**: Statewise seats in total
@@ -33,7 +33,7 @@ ORDER BY
 ```
 
 **Output:**
-![Statewise Seats](Statewise_Seats.png)
+![Statewise Seats](Assets/Statewise_Seats.png)
 
 ## **Query 3**: Total seats won by NDA
 
@@ -78,7 +78,7 @@ FROM
 ```
 
 **Output:**
-![NDA Total Seats Won](NDA_Total_Seats.png)
+![NDA Total Seats Won](Assets/NDA_Total_Seats.png)
 
 ## **Query 4:** Total seats won by NDA parties
 
@@ -126,7 +126,7 @@ ORDER BY
 *NDA parties commented out in the above code are the parties that didn't win any seats.*
 
 **Output:**
-![Total Seats Won by NDA](NDA_Parties_Total_Seats.png)
+![Total Seats Won by NDA](Assets/NDA_Parties_Total_Seats.png)
 
 
 ## **Query 5:** Total seats won by I.N.D.I.A
@@ -166,7 +166,7 @@ FROM
 ```
 
 **Output:**
-![Total I.N.D.I.A Seats](I.N.D.I.A_Total_Seats_Won.png)
+![Total I.N.D.I.A Seats](Assets/I.N.D.I.A_Total_Seats_Won.png)
 
 ## **Query 6:** Total seats won by I.N.D.I.A parties
 
@@ -205,7 +205,7 @@ ORDER BY
 ```
 
 **Output:**
-![I.N.D.I.A Seats Won By Each Party](I.N.D.I.A_Parties_Seats_Won.png)
+![I.N.D.I.A Seats Won By Each Party](Assets/I.N.D.I.A_Parties_Seats_Won.png)
 
 ## **Query 7:** Categorize the parties into their respective alliance
 
@@ -281,7 +281,7 @@ WHERE
     party_alliance IS NULL;
 ```
 5) ```SELECT * FROM partywise_results```
-![modified partywise_results](Party_Alliance_Field.png)
+![modified partywise_results](Assets/Party_Alliance_Field.png)
 
 What this new column enables us to do is to quickly retrieve the results we had coded a lot for earlier. Below is an example of how shorter queries give the same results:
 
@@ -297,7 +297,7 @@ ORDER BY
     won DESC
 ```
 **Ouput:**
-![](query_example_nda.png)
+![](Assets/query_example_nda.png)
 
 Reshaping **Query 4** into just a few lines of code, we are able to bypass the need to list out all the party names under a particular alliance, which is a tedious task.
 
@@ -329,7 +329,7 @@ ORDER BY
     total_votes DESC;
 ```
 **Output:**
-![](Specific_Constituency.png)
+![](Assets/Specific_Constituency.png)
 
 For getting the winning details of the candidate from a specific state, we can make a small change in the ```WHERE``` clause as below:
 ```sql
@@ -337,7 +337,7 @@ WHERE
    s.state = 'Tamil Nadu'
 ```
 **Output:**
-![](Specific_State.png)
+![](Assets/Specific_State.png)
 
 For the winning candidate details from a specific party alliance, we can change it as follows:
 ```sql
@@ -345,7 +345,7 @@ WHERE
     pr.party_alliance = 'NDA' 
 ```
 **Output:**
-![](Specific_Alliance.png)
+![](Assets/Specific_Alliance.png)
 
 ## **Query 9:** EVM vs Postal votes
 
@@ -392,7 +392,7 @@ ORDER BY
     Total_Votes DESC;
 ```
 **Output:**
-![Total seats won in a state](Total_Seats_State.png)
+![Total seats won in a state](Assets/Total_Seats_State.png)
 
 ## **Query 11:** Total number of seats won by each party alliance in each state
 
@@ -418,10 +418,10 @@ GROUP BY
 ```
 
 **Output:**
-![seats won by each alliance in a specific state](Specific_State_Seats.png)
+![seats won by each alliance in a specific state](Assets/Specific_State_Seats.png)
 
 To get a statewise view, we simply remove the ```WHERE``` clause, to get the following output:
-![seats won by each alliance statewise](Statewise_Seats_Alliance.png)
+![seats won by each alliance statewise](Assets/Statewise_Seats_Alliance.png)
 
 ## **Query 12:** Top 10 candidates with the highest number of EVM votes in each constituency
 
@@ -442,7 +442,7 @@ ORDER BY
 LIMIT 10; -- for top 10 highest EVM votes
 ```
 **Output:**
-![Top 10 EVM Votes](Top_10_EVM_Votes.png)
+![Top 10 EVM Votes](Assets/Top_10_EVM_Votes.png)
 
 ## **Query 13:** Top 10 Winner vs Runner-up candidates in each constituency of a state
 
@@ -492,7 +492,7 @@ LIMIT 10;
 
 **Output:**
 
-![Winner vs RunnerUp](Winner_vs_RunnerUp.png)
+![Winner vs RunnerUp](Assets/Winner_vs_RunnerUp.png)
 
 **Code 2:**
 The same result set can be retrieved by a more concise code as below:
@@ -565,10 +565,10 @@ WHERE
 ```
 
 **Output:**
-![state_view](state_view_specific.png)
+![state_view](Assets/state_view_specific.png)
 
 We can refer to the below table for verifying the numbers:
-![state_view list](state_view_list.png)
+![state_view list](Assets/state_view_list.png)
 
 This statewise list was developed using the following code:
 ```sql
