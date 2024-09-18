@@ -542,10 +542,8 @@ WITH state_view AS
         statewise_results AS sr ON sr.parliament_constituency = cr.parliament_constituency
     INNER JOIN 
         states AS s ON s.state_id = sr.state_id
-
     INNER JOIN
         partywise_results AS pr ON pr.party_id = cr.party_id
-    
     GROUP BY
         s.state
     )
